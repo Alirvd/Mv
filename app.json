@@ -1,0 +1,62 @@
+{
+    "name": "Source Virus",
+    "description":" سورس ميوزك  مجااني للكل تحياتي الكم  ",
+    "logo": "https://i.ibb.co/pxmGGBN/4015ee2648f4.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "Shahm",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": " ضـع ايبي ايدي احصل علية من هنا ",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": " ضـع ايبي هاش احصل علية من هنا ",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "ضـع تـوكـن بـوتـك هـنـا",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ضـع ايـديـك هـنـا",
+        "value": "",
+        "required": true
+      },
+      "SESSION": {
+        "description": "ضـع جلسة البايروجرام ",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "ضـع ايـدي الـحـسـاب الـمـسـاعـد",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": " عوفها كما هيه ولتلعب بيها!!!  ",
+        "value": "https://t.me/v_vnn",
+        "required": false
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }

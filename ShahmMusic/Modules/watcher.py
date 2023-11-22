@@ -58,7 +58,7 @@ async def on_stream_end(pytgcalls, update: Update):
     else:
         process = await app.send_message(
             chat_id=chat_id,
-            text="⌔︙ تنزيل المسار التالي من قائمة الانتظار...",
+            text="⌔︙ انتضر قليلا سيتم التحميل ...",
         )
         title = get[0]["title"]
         duration = get[0]["duration"]
@@ -84,6 +84,6 @@ async def on_stream_end(pytgcalls, update: Update):
         await app.send_photo(
             chat_id=chat_id,
             photo=img,
-            caption=f"**⌔︙ بدأ التشغيل ✅**\n\n⌔︙ **العنوان :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n⌔︙ **المدة :** `{duration}` دقيقه\n⌔︙ **بواسطه :** {req_by}",
+            caption=f"**⌔︙ بدأ التشغيل ✅ **\n\n⌔︙ **العنوان🫶🏻 :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n⌔︙ **المدة :** `{duration}` دقيقه\n⌔︙ **بواسطه الحلو  :** {req_by}",
             reply_markup=buttons,
-        )
+)

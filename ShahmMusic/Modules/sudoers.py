@@ -85,7 +85,7 @@ async def sudodel(_, message: Message):
 @app.on_message(filters.command(["sudolist", "sudoers", "sudo"]) | filters.command(["المطورين","قائمه المطورين"],prefixes= ["/", "!","","#"]))
 async def sudoers_list(_, message: Message):
     hehe = await message.reply_text("⌔︙ جارٍ الحصول على قائمة المطورين...")
-    text = "<u>⌔︙ **المطور وكاتب السورس @v_vnn  :**</u>\n"
+    text = "<u>⌔︙ **المطور وكاتب السورس @z_r_y  :**</u>\n"
     count = 0
     user = await app.get_users(OWNER_ID)
     user = user.first_name if not user.mention else user.mention
@@ -105,6 +105,6 @@ async def sudoers_list(_, message: Message):
             except Exception:
                 continue
     if not text:
-        await message.reply_text("⌔︙ملكيت قائمه المكورين راسل @v_vnn .")
+        await message.reply_text("⌔︙ملكيت قائمه المكورين راسل @z_r_y .")
     else:
         await hehe.edit_text(text)
